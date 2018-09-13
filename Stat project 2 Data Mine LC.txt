@@ -1,0 +1,47 @@
+
+Natalie McGuckin 
+Stat project 2 Data Mine LC
+
+1.  Use the airline data stored in this directory:
+
+/depot/statclass/data/dataexpo2009
+
+1a. What was the average arrival delay (in minutes) for flights in 2005?
+
+nmcguck@scholar-fe06:/depot/statclass/data/dataexpo2009 $ cat 2005.csv |awk -F, '{pizza = pizza+ $15; count=count+1} END{print pizza/count} '
+7.03274
+
+-made a statement going through each file, used 15 because it was the 15th column. Count is adding up each one. Pizza/count= average. 
+
+1b. What was the average departure delay (in minutes) for flights in 2005?
+
+nmcguck@scholar-fe06:/depot/statclass/data/dataexpo2009 $ cat 2005.csv |awk -F, '{pizza = pizza+ $16; count=count+1} END{print pizza/count} '
+8.51186
+
+
+1cd. Now revise your solution to 1ab, to account for the delays (of both types) in the full set of data, across all years.
+
+nmcguck@scholar-fe06:/depot/statclass/data/dataexpo2009 $ cat allyears.csv |awk -F, '{pizza = pizza+ $16; count=count+1} END{print pizza/count} '
+8.01844
+nmcguck@scholar-fe06:/depot/statclass/data/dataexpo2009 $ cat allyears.csv |awk -F, '{pizza = pizza+ $15; count=count+1} END{print pizza/count} '
+6.9023
+
+2. Revise your solutions to 1abcd to only include flights that took place on the weekends.
+
+ cat allyears.csv | awk -F, '{if($4 > 5) {pizza += $16; count += 1}} END{print pizza/count}'
+7.55609
+
+cat allyears.csv | awk -F, '{if($4 > 5) {pizza += $15; count += 1}} END{print pizza/count}'
+5.30331
+
+ 
+3.  Consider the June 2017 taxi cab data, which is located in this folder:
+
+/depot/statclass/data/taxi2018
+
+What is the average distance of a taxi cab ride in New York City in June 2017?
+
+cat yellow_tripdata_2017-06.csv | awk -F, '{total = total+ $5; count=count+1}  END{print total/count}' 
+2.97862
+
+Total divided by the number of lines. 
