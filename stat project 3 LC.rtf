@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+Natalie McGuckin\
+Stat Project 3 LC\
+\
+\
+\
+1.\'a0 As in Project 1, question 2:\'a0 In the year 2005, did United or Delta have more flights?\cb1 \
+\cb3 \'a0\
+
+\b0 sort(table(mfDF$UniqueCarrier))[c('UA','DL')] \
+UA     DL \
+485918 658302\cb1    Delta had more flights\
+\
+
+\b \
+\cb3 2.\'a0 As in Project 2, question 2a:\'a0 Restricting attention to weekends (only), what was the average arrival delay (in minutes) for flights in 2005?\
+\
+
+\b0 mean(mfDF$ArrDelay[mfDF$DayOfWeek>5], na.rm = TRUE)\cb1 \
+\cb3 \'a04.939053\
+
+\b \cb1 \
+\cb3 3.\'a0 As in Project 1, question 3:\'a0 In June 2017, what is the distribution of the number of passengers in the taxi cab rides?\
+\
+
+\b0 sort(table(Pizza$passenger_count))\
+\
+9       7       8       0       4       6       3 \
+     20      26      30     548  187979  288220  406162 \
+      5       2       1 \
+ 455753 1385066 6933189 \cb1 \
+\cb3 \'a0
+\b \cb1 \
+\cb3 4.\'a0 As in Project 2, question 3:\'a0\'a0 What is the average distance of a taxi cab ride in New York City in June 2017?\
+\
+
+\b0 mean(Pizza$trip_distance)\
+2.978617}
