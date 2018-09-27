@@ -1,0 +1,15 @@
+
+Natalie McGuckin
+
+
+
+install.packages("ggmap")
+install.packages("googleway")
+library(ggmap)
+myDF <- read.csv("Downloads/airports.csv")
+Indiana<-myDF[myDF$state=="IN",]
+INPoints <- data.frame(lon=Indiana$long,lat=Indiana$lat)
+
+IN_center = as.numeric(geocode("Indiana", override_limit = TRUE))
+INMAP <- ggmap(get_googlemap(center=c(39.7684,86.1581), zoom = 7))
+INMAP <- INMAP + geom_point(data=INPoints)
