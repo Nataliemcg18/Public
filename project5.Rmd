@@ -1,0 +1,39 @@
+---
+title: "class example"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1a. Compute the average distance for the flights on each airline in 2005. 
+```{r}
+myDF <- read.csv("/depot/statclass/data/dataexpo2009/2005.csv")
+pizza <- tapply(myDF$Distance, myDF$UniqueCarrier, mean, na.rm=T)
+print(pizza)
+```
+
+1b. Sort the result from 1a, and make a dotchart to display the results in sorted order. (Please display all of the values in the dotchart.)
+```{r}
+dotchart(sort(pizza))
+```
+
+
+
+2a. Compute the average total amount of the cost of taxi rides in June 2017, for each pickup location ID. 
+
+```{r}
+taxi <- read.csv("/depot/statclass/data/taxi2018/yellow_tripdata_2017-06.csv")
+pizza2 <- tapply(taxi$total_amount,taxi$PULocationID,mean,na.rm=TRUE)
+print(pizza2)
+```
+
+
+2b. Sort the result from 2a, and make a dotchart to display the results in sorted order. (Please ONLY display the results with value bigger than 80.)
+```{r}
+
+dotchart(sort(pizza2[pizza2>80]))
+```
+
+
