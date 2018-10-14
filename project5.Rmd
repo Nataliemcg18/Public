@@ -1,3 +1,8 @@
+# TA NOTES
+# Great work!
+# Score: 10/10
+
+
 ---
 title: "class example"
 output: pdf_document
