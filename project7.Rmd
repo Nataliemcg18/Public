@@ -1,0 +1,41 @@
+---
+title: "Project.7"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#1. 
+Use the Batting.csv file (inside the "core" folder)
+    to discover who is a member of the 40-40 club,
+    namely, who has hit 40 home runs and also has
+    (simultaneously) stolen 40 bases in the same season.
+    
+```{r}
+myDF <- read.csv ("Downloads/baseballdatabank-master/core/Batting.csv")
+myDF[myDF$HR>=40 & myDF$SB>=40,]
+```
+
+#2. 
+Make a plot that depicts the total number of home runs per year
+    (across all players on all teams).  The plot should have the years
+    as the labels for the x-axis, and should have the number of home runs
+    as the labels for the y-axis.
+```{r}
+v <- tapply(myDF$HR,myDF$yearID,sum)
+plot(names(v),v,xlab = "years",ylab = "HR")
+```
+
+#3
+```{r}
+#a.
+myBatting <- read.csv ("Downloads/baseballdatabank-master/core/Batting.csv")
+myPeople <- read.csv ("Downloads/baseballdatabank-master/core/People.csv")
+myDF <- merge(myBatting, myPeople, by="playerID")
+#b.
+Fullname <- paste(myDF$nameFirst,myDF$nameLast)
+myDF$fullname <- Fullname
+#c
+myDF[myDF$HR>=40 & myDF$SB>=40,]
