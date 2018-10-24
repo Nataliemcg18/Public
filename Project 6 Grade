@@ -1,0 +1,29 @@
+Dear Natalie McGuckin,
+
+Here is the feedback for your answer to Project 6.
+
+Score: 10/10 - Good job!
+
+Additional comments:
+- Please upload the correct RMD file - A quick
+  double-check would be sufficient!
+  (No points deducted as you have the correct
+  contents in the PDF file.)
+  Also, you may want to double check your PDF
+  file to make sure the contents are displayed
+  properly.
+- Instead of the function tail(), you can change the 
+  order of sort() by including the argument decreasing=FALSE.
+  For example, try the two lines of R code:
+    sort(c(1, 3, 2));
+    sort(c(1, 3, 2), decreasing = FALSE);
+- I can see you are using the awk array for Question 2.
+  Don't you want to try the challenge question?
+  All you need is to replace 
+    count[$10] + 1
+  by
+    count[$10] + $15
+  Try it :)
+  
+Best,
+Yumin
