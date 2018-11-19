@@ -28,3 +28,4 @@ myDF <- easyquery("SELECT p.yearID FROM Pitching p WHERE p.playerID = 'ryanno01'
 myDF
 
 Equaling this to the player ID
+ 
