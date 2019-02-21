@@ -53,9 +53,18 @@ Explain solution:
 
  
 
-Using the data from the National Park Service:  https://www.nps.gov/
+**2a.**  Extract the city where the National Park property for Catoctin Mountain is located.  This data is found at:
+https://www.nps.gov/cato/index.htm
+or in the file:
+/depot/statclass/data/parks/cato.htm
 
-**2a.**  Extract the cities where each of the National Park properties are located.
+```{R}
+# Place code here
+```
+
+Explain solution:
+
+**2b.**  Extract the state where Catoctin Mountain is located.
 
 
 ```{R}
@@ -64,7 +73,7 @@ Using the data from the National Park Service:  https://www.nps.gov/
 
 Explain solution:
 
-**2b.**  Extract the zip codes for the properties.
+**2c.**  Extract the zip code where Catoctin Mountain is located.
 
 
 ```{R}
