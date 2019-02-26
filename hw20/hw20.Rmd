@@ -2,7 +2,7 @@
 title: "Project 20"
 output: pdf_document
 ---
-**Name:**
+Natalie McGuckin
 
 Using RStudio, we start to learn how to extract data from the web.
 
@@ -19,37 +19,43 @@ On the Hot 100 chart, from the day of your birth:
 
 
 ```{R}
-
+library(XML)
+library(RCurl)
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/2000-04-13")),
+            "//*/div[@class='chart-list-item__title']", xmlValue)
 ```
 
-Explain solution:
+Explain solution:changed the code to pull the page for my birthday and scraped the top 99 songs. 
 
 **1b.**  Extract the artists for those 99 songs.
 
 
 ```{R}
-# Place code here
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/2000-04-13")),
+            "//*/div[@class='chart-list-item__artist']", xmlValue)
 ```
 
-Explain solution:
+Explain solution: Changed class
 
 **1c.**  Extract the title of the number 1 song for that day.
 
 
 ```{R}
-# Place code here
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/2000-04-13")),
+            "//*/div[@class='chart-number-one__title']", xmlValue)
 ```
 
-Explain solution:
+Explain solution: changed class, used same code from 1a 
 
 **1d.**  Extract the artist for the number 1 song for that day.
 
 
 ```{R}
-# Place code here
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/2000-04-13")),
+            "//*/div[@class='chart-number-one__artist']", xmlValue)
 ```
 
-Explain solution:
+Explain solution: changed class
 
  
 
@@ -59,28 +65,28 @@ or in the file:
 /depot/statclass/data/parks/cato.htm
 
 ```{R}
-# Place code here
+xpathSApply(htmlParse(getURL("https://www.nps.gov/cato/index.htm")), "//*/span[@itemprop='addressLocality']", xmlValue)
 ```
 
-Explain solution:
+Explain solution:cato shortening the website uses for cactotin moutntain
 
 **2b.**  Extract the state where Catoctin Mountain is located.
 
 
 ```{R}
-# Place code here
+xpathSApply(htmlParse(getURL("https://www.nps.gov/cato/index.htm")), "//*/span[@itemprop='addressRegion']", xmlValue)
 ```
 
-Explain solution:
+Explain solution: Changed class
 
 **2c.**  Extract the zip code where Catoctin Mountain is located.
 
 
 ```{R}
-# Place code here
+xpathSApply(htmlParse(getURL("https://www.nps.gov/cato/index.htm")), "//*/span[@itemprop='postalCode']", xmlValue)
 ```
 
-Explain solution:
+Explain solution:changed class
 
  
 
@@ -94,13 +100,13 @@ make sure that the data is embedded in the page,
 rather than in csv files that are already prepared for download.
 (We want to actually scrape some data.)
 
-1. 
-2. 
-3. 
+1. https://www.color-hex.com/popular-colors.php
+2. http://norfolkdailynews.com/lite_rock/programs/dave_williams/most-popular-ice-cream-flavors/article_8e46a544-6a88-11e8-a65b-2bb11e94b092.html
+3. https://buccetos.com/the-top-10-most-popular-pizza-toppings/
 
 **3b.**  For each of the three websites that you identified,
 give a very brief description of the kind of data that you want to scrape.
 
-1. 
-2. 
-3. 
+1. I want to scrape most popular colors     
+2. I want to scrape most popular ice cream flavors
+3. I want to scrape most popular pizza toppings
