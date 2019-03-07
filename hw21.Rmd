@@ -1,0 +1,52 @@
+---
+title: "Project 21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Natalie McGuckin
+
+This project is supposed to be an easy modification of the project example, 
+since it is almost time for Spring Break! 
+
+Note:  Do not worry if some of the results have extra spaces.  We can 
+deal with that later! 
+
+**1.** Modify the NPS example to extract the city location for every 
+National Park.
+```{r}
+library(RCurl)
+library(XML)
+myparks <- xpathSApply(htmlParse(getURL("https://www.nps.gov/findapark/index.htm")), "//*/div/select/optgroup/option", xmlGetAttr, "value")
+mygoodparks <- myparks[(myparks != "cbpo")&(myparks != "foca")]
+mycityextractor <- function(x) {xpathSApply(htmlParse(getURL( paste0("https://www.nps.gov/", x, "/index.htm"))),
+                                            "//*/span[@itemprop='addressLocality']", xmlValue)}
+myresults <- sapply( mygoodparks, mycityextractor )
+head(myresults)
+
+```
+Explain solution: Used my city extractor to find cities. 
+
+**2.** Same question, for the state location for every National Park. 
+```{r}
+mystateextractor <- function(x) {xpathSApply(htmlParse(getURL( paste0("https://www.nps.gov/", x, "/index.htm"))),
+                                            "//*/span[@itemprop='addressRegion']", xmlValue)}
+myresults <- sapply( mygoodparks, mycityextractor )
+head(myresults)
+```
+Explain solution: Used the resources on piazza and from previous homework to solve solution. Used mystate extractor because we needed a state. 
+
+**3.** Same question, for the zip code for every National Park. 
+```{r}
+myzipcodeextractor <- function(x) {xpathSApply(htmlParse(getURL( paste0("https://www.nps.gov/", x, "/index.htm"))),
+                                            "//*/span[@itemprop='postalCode']", xmlValue)}
+myresults <- sapply( mygoodparks, myzipcodeextractor )
+head(myresults)
+```
+Explain solution: Used zipcode extractor to get zip code
+
+
+
