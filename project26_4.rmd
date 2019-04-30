@@ -1,0 +1,43 @@
+Natalie McGuckin 
+Data Mine Seminar 
+30 April 2019
+Dr. Mark Daniel Ward
+
+Final Project
+
+A good example of a good visualization is ?What is a Trillion Dollars?. They have a good color scheme, that fades nicely with as you scroll with their visualization. They use the Apple logo that most people know of to create a great a good sense of worth. People understand the Apple logo and the influence it carries. They use easy to read fonts combined with good lettering to make it easy to read. They use relevant terms to give us an idea of what the money means. For example they use the GDP of many countries such as Germany and China to make the numbers make sense to us. They combine colors, font sizes, and familiar terms to make their visualization comprehensible.
+
+Another good example of a good visualization is ?Based on a *True* True Story?. Their color scheme and the way that they display their data is excellent. They take into account color and they use colors that even people who have color blindness can see. Their colors are pleasing to the eye. The way they set up their data reminds me of a tape of movie. It is interesting because this is about movies. I am sure that this was carefully thought through. They did a good job of incorporating different styles and making the data comprehensible. They use well known movies to grab the reader?s attention. If you click on one of their ?tapes? then they open up and show clips of the movie. They also give you a time-stamp. This is interactive and gives a neat function that viewers may want to play with.
+
+My Last example of a good visualization is ?A timeline of a Far Future?. Their colors and legend adequate displays their data in an aesthetically pleasing manner. As you scroll down the infographic the background colors fade from light to dark, an ombre effect. This is
+ fitting as it ends with earth dying. They use colors that bold and highlight words that need and want to be seen so no information is lost. Lastly, the colors are color blind accessible.
+ 
+A visualization that lacked in some areas was ?Star Wars: The Last Jedi   dramatic divide between critics & audience
+? is the biggest movie ever to create such a ?
+ ?. (93% critics vs 56% audience). But which
+ other films have been loved by critics, but not so much by the
+ people??. The visualization was on the darker side so that made it
+ hard to see and comprehend at first. The x-axis starts at 16% and
+ goes to 40%. It is unfortunate that it starts and ends at a weird
+ number. We as humans are used to seeing the numbers at one end of
+ the spectrum be 0 and the other end be 100. By starting at odd
+ numbers it simply misleads the viewer.
+ 
+A visualization that lacked in some areas was ?Ikigai Reasons for Being?. They did not take into consideration people who are color blind. Some of their colors mixing together might confuse those who are color blind. The colors mixing together are confusing. If they had a legend for what different colors meant. Some of the colors go black and more of a dirty water kind of color when they mix together. It does not look pretty. I think they could definitely fix their colors and the shape. I think that would tremendously benefit them.
+
+Lastly, a visualization that lacked in some areas is ?Taste Buds Complementary Flavors?. It is a pretty bare bones visualization. There is nothing too special about it. The only big thing that changes from category of food to category of food is the color of the rays shooting from the nodes.They go from orange and yellow to ending with red. There is not a legend so I am not sure if these colors change for good reason or if they change to add a little variation. Anyways, it is a basic visualization that could use a little more exciting features.
+
+The three ways that I think ?Congestion in the Sky? can be improved are the color scheme, the overall clarity, and making the data more comprehensible. In the top right visualization for the
+
+ overview, something that immediately stands out to me is the color scheme. I do understand the idea that red is the bad time to fly while green is the good time to fly. However, for people that are colorblind, this is nightmare. In addition, having too many variations of the same color next to each other is also a nightmare. Someone who is colorblind could see this as the same color. When picking colors we need to be considerate I think that the colors should have been more carefully selected. Maybe keep the red for bad and instead of green use more of a taupe or white color to illustrate that this is when the airport will be more empty. It is important for the Data Visualization to be inclusive.
+ 
+Next I will discuss the overall clarity of ?Congestion in the Sky?. I think that the the visualizations created would be. There is congestion in the visualization that I do not even want to know what is going on in the sky. The visualizations are too close together and have a complicated zoom in and zoom out feature. I wish that it could be a scrolling more infographic idea. There is too much going on in the visualization that it has lost its own clarity. The best part of visualizing data is that anyone from a kindergartner from a college professor can understand the message you are trying to convey. By losing the clarity you lose the reader. I think that this could have achieved clarity by not having everything packed so tightly. There is plethora of information and graphics but it is not done in a way that is easily understandable. The data is packed too close together even when I zoom in. I wish that everything was not packed so tightly together.
+
+Next I want to discuss how the data can be more comprehensible. I believe that less is more, in this visualization I believe that would help. There are four main sections of data and in each section there are a few more visualizations. I think that if there were 2 at most 3 comprehensible visualizations then the reader would not be so overwhelmed. There should also be a introduction that tells us what we data we are looking at and why it is important. In the top left corner there is a little section of the background. However, it is so tiny and off to the side I felt like I had to search for it. I wish that was a
+bigger more thorough part of the visualization because that it is an important factor. With data there are so many different routes that you can take with it that it is important to be specific with what you are looking at.
+
+I believe that ?What Airlines Would You Avoid For Your Next Flight? by Haolai Jiang and Jung-Chao Wang from Western Michigan University should have won first place for the 2009 Data Expo. I like how the poster has a good color scheme, it has good clarity, and it is comprehensible. The color scheme is color blind accessible. I believe that this is a key feature in creating a good visualization. In the visualization titled Airline Companies, I believe that there is a basic color scheme here that works well with the data. Depending on the who is reading the data this scatterplot might be difficult for people to understand. By making the color scheme basic for this it keeps the scatterplot easy to understand.
+
+What Airlines Would You Avoid For Your Next Flight? by Haolai Jiang and Jung-Chao Wang from Western Michigan University has good clarity. Their work is easy to understand and is not cluttered. Their visualizations are spread out among the poster. Their bar charts include x and y coordinates so we know what we are looking at. Their work is minimalistic while still incorporating important components of Data Visualization such as titles, data points, and descriptions.
+
+What Airlines Would You Avoid For Your Next Flight? by Haolai Jiang and Jung-Chao Wang from Western Michigan University?s poster is comprehensible. After and even before each visualization they have a little paragraph talking about what each visualization means. I believe that this is important because it clarifies what the data is. The data in the visualizations are easily understandable and depending on who you are presenting the data to it is easy to further explain the visualizations and the data or keep it at a basic level so it is easy to understand.
